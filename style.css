@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+#left{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    color: #fff;
+}
+
+#text{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    z-index: 99;
+    /* background-color: red; */
+}
+
+#left h1{
+    font-family: "Hursheys";
+    font-size: 120px;
+    font-weight: 100;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s;
+}
+
+#left #tbtm{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+}
+
+#left #tbtm h3{
+    font-family: "Hursheys";
+    font-weight: 100;
+    font-size: 40px;
+}
+
+#center{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1596942506460-9123e66e5d84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#startext{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+
+#startext h2{
+    font-family: "Hursheys";
+    color: #fff;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+#startext h1{
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    font-family: "Hursheys";
+    color: #fff;
+    font-weight: 100;
+    font-size: 120px;
+}
+
+#right{
+    width: 20%;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+
+#rtop{
+    width: 100%;
+    height: 80%;
+    background-image: url(https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#rbtm{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+}
+
+#rbtm h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Hursheys";
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#linediv{
+    z-index: 100;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+    border-top: .3px solid rgba(255, 255, 255, 0.295);
+    border-bottom: .3px solid rgba(255, 255, 255, 0.295);
+}
+
+#linediv h5{
+    position: absolute;
+    top: 50%;
+    font-family: "gilroy";
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 5px;
+}
+
+#linediv #one{
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#linediv #two{
+    right: 4%;
+    transform: translate(0%, -50%);
+}
+
+#circle{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    border-radius: 50%;
+    width: 200px;
+    z-index: 100;
+    border: 1px solid #fff;
+    height: 200px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+}
+
+#circle h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "gilroy";
+    font-size: 10px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#circle:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#linediv:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#rbtm:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+#left h1:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
